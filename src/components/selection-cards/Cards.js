@@ -36,9 +36,11 @@ function Card(props) {
         <p className="text-gray-400 my-5">{props.details}</p>
         <p className="my-2">For Age: {props.age}</p>
         <p className="my-2">Time required : {props.time}s</p>
-        <button className="text-white bg-blue-600 my-5 py-4 px-28 rounded-md">
-          {props.button}
-        </button>
+        <div className="w-full text-center">
+          <button className="text-white bg-blue-600 my-5 py-4 w-full rounded-md">
+            {props.button}
+          </button>
+        </div>
       </div>
     </div>
   );
