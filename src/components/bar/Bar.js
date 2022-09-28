@@ -2,7 +2,7 @@ import React from "react";
 
 const bar = () => {
   return (
-    <div className="text-left">
+    <div className="text-left   ">
       <div className="flex items-center">
         <div className="w-10 m-5">
           <img src="muscle.png" alt="" />

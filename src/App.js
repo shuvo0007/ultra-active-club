@@ -6,8 +6,8 @@ import Bar from "./components/bar/Bar";
 function App() {
   return (
     <div className="App">
-      <div className="flex m-40">
-        <div className="w-3/4">
+      <div className="flex ">
+        <div className="w-3/4 m-40 ">
           <Bar></Bar>
           <div className="">
             <Cards></Cards>
