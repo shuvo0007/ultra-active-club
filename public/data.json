@@ -4,7 +4,8 @@
     "title": "Dumble Curl",
     "picture": "https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5005.jpg?w=1380&t=st=1664384225~exp=1664384825~hmac=d4e3e5baa74a4261b9631795a8a70f0415b64edc37e7c04eba78b5b63c87a1c2",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 dumble curl for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   },
   {
@@ -12,7 +13,8 @@
     "title": "Barbell Curl",
     "picture": "https://img.freepik.com/free-photo/focused-strong-man-cap-is-lifting-barbell-dark-photo-studio_613910-14848.jpg?w=1380&t=st=1664384461~exp=1664385061~hmac=64633b37ca46a66ec09bc5af8670d6d7b33c43ab63844784cb00b594f92fffec",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 barbell curl for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   },
   {
@@ -20,7 +22,8 @@
     "title": "Push UP",
     "picture": "https://img.freepik.com/free-photo/young-powerful-sportsman-training-push-ups-dark-wall_176420-537.jpg?w=1380&t=st=1664384508~exp=1664385108~hmac=76974514291fdcb5ad13b0af8056c13ddfdcffb39fc09650f28bf1886ef8834d",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 push up for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   },
   {
@@ -28,7 +31,8 @@
     "title": "Triceps",
     "picture": "https://img.freepik.com/free-photo/strong-man-training-gym_1303-23853.jpg?w=1380&t=st=1664384709~exp=1664385309~hmac=e7bcaf484d252692a7aecf54c4deacda8d7d11fa1a21d067a0606b441744098d",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 triceps for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   },
   {
@@ -36,15 +40,17 @@
     "title": "Planks",
     "picture": "https://img.freepik.com/free-photo/full-shot-man-doing-plank_23-2149036348.jpg?w=1380&t=st=1664384760~exp=1664385360~hmac=fd43f05b4ec5a392890bd5f90c516e79a7d3579de7ced2ac2c614cfc015e8399",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 planks for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   },
   {
     "index": 5,
-    "title": "Biceps", 
+    "title": "Biceps",
     "picture": "https://img.freepik.com/free-photo/portrait-young-laughing-muscular-man-showing-his-biceps-thumb-up-gesture_171337-7565.jpg?w=1380&t=st=1664384705~exp=1664385305~hmac=ec32c758614ba5f4591829ca1c1ae359ac5aa229ce742eec66e82afd8c96a8bc",
     "age": "20-25",
-    "details": "",
+    "details": "Do 15 biceps for 30s. 3 set. take 10s rest between sets.",
+    "button": "Add to list",
     "time": 30
   }
 ]
