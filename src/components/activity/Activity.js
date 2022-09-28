@@ -28,7 +28,7 @@ const activity = () => {
 
       <p className="font-bold py-5 ">Add A Break</p>
 
-      <div className="bg-slate-100 justify-center rounded-md my-5">
+      <div className="bg-slate-100 flex justify-evenly rounded-md my-5">
         <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
           20s
         </button>
@@ -49,12 +49,12 @@ const activity = () => {
       <p className="font-bold py-5">Exercise Details</p>
 
       <p className="bg-slate-100 p-5 rounded-md my-5">
-        <span className="font-bold">Exercise time</span> <span id=""></span>
-        <span className="text-gray-400 float-right">second</span>
+        <span className="font-bold">Exercise time:</span> <span id=""></span>
+        <span className="text-gray-400 float-right"> second</span>
       </p>
       <p className="bg-slate-100 p-5 rounded-md my-5">
-        <span className="font-bold">Break time</span> <span id=""></span>
-        <span className="text-gray-400 float-right">second</span>
+        <span className="font-bold">Break time:</span> <span id=""></span>
+        <span className="text-gray-400 float-right"> second</span>
       </p>
 
       <div className="w-full text-center">

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="flex ">
-        <div className="w-3/4 m-40 ">
+        <div className="w-3/5 my-40 mx-36">
           <Bar></Bar>
           <div className="">
             <Cards></Cards>
