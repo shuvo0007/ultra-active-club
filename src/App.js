@@ -13,7 +13,6 @@ function App() {
             <Cards></Cards>
           </div>
         </div>
-
         <div className="w-1/4">
           <Activity></Activity>
         </div>

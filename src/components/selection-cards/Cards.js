@@ -25,6 +25,8 @@ const Cards = () => {
   );
 };
 
+let totalTime = 0;
+
 function Card(props) {
   return (
     <div className="bg-white rounded-md text-left p-5">
@@ -37,13 +39,20 @@ function Card(props) {
         <p className="my-2">For Age: {props.age}</p>
         <p className="my-2">Time required : {props.time}s</p>
         <div className="w-full text-center">
-          <button className="text-white bg-blue-600 my-5 py-4 w-full rounded-md">
+          <button
+            onClick={() => TimeCalculation(props)}
+            className="text-white bg-blue-600 my-5 py-4 w-full rounded-md hover:bg-green-600"
+          >
             {props.button}
           </button>
         </div>
       </div>
     </div>
   );
+}
+
+function TimeCalculation(props) {
+  // totalTime = totalTime + props.time;
 }
 
 export default Cards;

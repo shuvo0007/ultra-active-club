@@ -1,5 +1,9 @@
 import React from "react";
 
+function time(props){
+  
+}
+
 const activity = () => {
   return (
     <div className="bg-white h-full text-left text-2xl p-10">
@@ -7,7 +11,10 @@ const activity = () => {
         <img src="img.jpg" alt="pro pic" className="w-14 rounded-xl m-2" />
         <div>
           <h2 className="font-bold">Md Samiul Islam</h2>
-          <p> Dhanmondi, Dhaka</p>
+          <div className="flex">
+            <img className="w-8" src="location.png" alt="" />
+            <p> Dhanmondi, Dhaka</p>
+          </div>
         </div>
       </div>
 
@@ -30,10 +37,10 @@ const activity = () => {
 
       <div className="bg-slate-100 flex justify-evenly rounded-md my-5">
         <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
-          20s
+          10s
         </button>
         <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
-          10s
+          20s
         </button>
         <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
           30s
@@ -49,7 +56,8 @@ const activity = () => {
       <p className="font-bold py-5">Exercise Details</p>
 
       <p className="bg-slate-100 p-5 rounded-md my-5">
-        <span className="font-bold">Exercise time:</span> <span id=""></span>
+        <span className="font-bold">Exercise time:</span>
+        <span id=""></span>
         <span className="text-gray-400 float-right"> second</span>
       </p>
       <p className="bg-slate-100 p-5 rounded-md my-5">
@@ -58,7 +66,7 @@ const activity = () => {
       </p>
 
       <div className="w-full text-center">
-        <button className="text-white bg-blue-600 my-5 py-4 w-full rounded-md">
+        <button className="text-white bg-blue-600 my-5 py-4 w-full rounded-md hover:bg-green-600">
           Activity Completed
         </button>
       </div>
