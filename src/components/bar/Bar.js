@@ -7,10 +7,10 @@ const bar = () => {
         <div className="w-10 m-5">
           <img src="muscle.png" alt="" />
         </div>
-        <h1 className="sm:text-4xl text-3xl text-blue-600">Fitness GYM</h1>
+        <h1 className="md:text-4xl text-3xl text-blue-600">Fitness GYM</h1>
       </div>
       <div>
-        <h2 className="sm:text-3xl text-2xl font-bold sm:m-5 mx-5">Select today’s exercise</h2>
+        <h2 className="md:text-3xl text-2xl font-bold md:m-5 mx-5">Select today’s exercise</h2>
       </div>
     </div>
   );

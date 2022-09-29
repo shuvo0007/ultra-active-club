@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-
 const Cards = () => {
-  
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -11,7 +9,7 @@ const Cards = () => {
       .then((data) => setCards(data));
   }, []);
   return (
-    <div className="sm:grid sm:grid-cols-3 sm:gap-5 sm:p-5 w-96 sm:w-full pl-10 pt-5">
+    <div className="md:grid md:grid-cols-3 md:gap-5 md:p-5 sm:w-screen md:w-full md:pl-10 md:pt-5 w-96">
       {cards.map((card) => (
         <Card
           key={card.index}
@@ -33,10 +31,16 @@ function Card(props) {
   return (
     <div className="bg-white rounded-md text-left p-5 mb-5">
       <div className="">
-        <img className="h-48 w-full rounded-xl " src={props.picture} alt="" />
+        <img
+          className="md:h-48 w-full rounded-xl "
+          src={props.picture}
+          alt=""
+        />
       </div>
-      <div className="mt-5 sm:text-xl">
-        <h2 className="sm:text-2xl text-xl font-bold">{props.title}</h2>
+      <div className="mt-5 md:text-xl">
+        <h2 className="md:text-2xl sm:text-2xl text-xl font-bold">
+          {props.title}
+        </h2>
         <p className="text-gray-400 my-5">{props.details}</p>
         <p className="my-2">For Age: {props.age}</p>
         <p className="my-2">Time required : {props.time}s</p>
@@ -47,7 +51,6 @@ function Card(props) {
           >
             {props.button}
           </button>
-          
         </div>
       </div>
     </div>
