@@ -40,7 +40,7 @@ function Card(props) {
         <p className="my-2">Time required : {props.time}s</p>
         <div className="w-full text-center">
           <button
-            onClick={() => TimeCalculation(props)}
+            onClick={() => TimeCalculation(props.time)}
             className="text-white bg-blue-600 my-5 py-4 w-full rounded-md hover:bg-green-600"
           >
             {props.button}
@@ -52,7 +52,9 @@ function Card(props) {
 }
 
 function TimeCalculation(props) {
-  // totalTime = totalTime + props.time;
+  totalTime = totalTime + props;
+  const exerciseTimeDiv = document.getElementById("exerciseTime");
+  exerciseTimeDiv.innerHTML = `${totalTime}`;
 }
 
 export default Cards;

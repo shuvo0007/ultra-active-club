@@ -1,7 +1,13 @@
 import React from "react";
 
-function time(props){
-  
+let time = 0;
+function BreakTime(totalBreakTime) {
+  time = totalBreakTime;
+  window.localStorage.setItem("time", time);
+  const breakTimeDiv = document.getElementById("breakTimeId");
+
+  breakTimeDiv.innerHTML = `${time}
+  `;
 }
 
 const activity = () => {
@@ -36,19 +42,34 @@ const activity = () => {
       <p className="font-bold py-5 ">Add A Break</p>
 
       <div className="bg-slate-100 flex justify-evenly rounded-md my-5">
-        <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
+        <button
+          onClick={() => BreakTime(10)}
+          className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600"
+        >
           10s
         </button>
-        <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
+        <button
+          onClick={() => BreakTime(20)}
+          className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600"
+        >
           20s
         </button>
-        <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
+        <button
+          onClick={() => BreakTime(30)}
+          className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600"
+        >
           30s
         </button>
-        <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
+        <button
+          onClick={() => BreakTime(40)}
+          className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600"
+        >
           40s
         </button>
-        <button className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600">
+        <button
+          onClick={() => BreakTime(50)}
+          className="bg-white rounded-full p-2 my-5 ml-2 hover:bg-blue-600"
+        >
           50s
         </button>
       </div>
@@ -57,12 +78,16 @@ const activity = () => {
 
       <p className="bg-slate-100 p-5 rounded-md my-5">
         <span className="font-bold">Exercise time:</span>
-        <span id=""></span>
-        <span className="text-gray-400 float-right"> second</span>
+        <span className="text-gray-400 float-right">
+          <span id="exerciseTime">0</span> second
+        </span>
       </p>
       <p className="bg-slate-100 p-5 rounded-md my-5">
-        <span className="font-bold">Break time:</span> <span id=""></span>
-        <span className="text-gray-400 float-right"> second</span>
+        <span className="font-bold">Break time: </span>
+        <span className="text-gray-400 float-right">
+          <span id="breakTimeId">{window.localStorage.getItem("time")}</span>{" "}
+          second
+        </span>
       </p>
 
       <div className="w-full text-center">
