@@ -1,4 +1,6 @@
 import React from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 let time = 0;
 function BreakTime(totalBreakTime) {
@@ -11,6 +13,17 @@ function BreakTime(totalBreakTime) {
 }
 
 const activity = () => {
+  const notify = () =>
+    toast.success("🦄 Wow so easy!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   return (
     <div className="bg-white h-full text-left text-2xl p-10">
       <div className="flex mb-5">
@@ -91,9 +104,24 @@ const activity = () => {
       </p>
 
       <div className="w-full text-center">
-        <button className="text-white bg-blue-600 my-5 py-4 w-full rounded-md hover:bg-green-600">
+        <button
+          className="text-white bg-blue-600 my-5 py-4 w-full rounded-md hover:bg-green-600"
+          onClick={notify}
+        >
           Activity Completed
         </button>
+        <ToastContainer
+          theme="colored"
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
     </div>
   );

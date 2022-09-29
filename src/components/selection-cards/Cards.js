@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+
 const Cards = () => {
+  
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -45,6 +47,7 @@ function Card(props) {
           >
             {props.button}
           </button>
+          
         </div>
       </div>
     </div>
