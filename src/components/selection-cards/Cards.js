@@ -9,7 +9,7 @@ const Cards = () => {
       .then((data) => setCards(data));
   }, []);
   return (
-    <div className="sm:grid sm:grid-cols-3 sm:gap-5 sm:p-5 w-96 pl-10 pt-5">
+    <div className="sm:grid sm:grid-cols-3 sm:gap-5 sm:p-5 w-96 sm:w-full pl-10 pt-5">
       {cards.map((card) => (
         <Card
           key={card.index}
